@@ -1,0 +1,48 @@
+/**{
+	box-sizing: border-box;
+}*/
+div{
+	width: 160px;
+	height: 80px;
+	padding: 20px;
+	border: 8px solid red;
+	background: blue;
+	color: white;
+}
+
+
+.content-box{
+	/*add the padding and border outside the box*/
+	box-sizing: content-box;
+	/*total width = 160px + right and left padding of 20 px i.e(2*20) + right and left border of 8px i.e(2 * 8)
+	160 + 40 + 16 = 216px*/
+	/*total height = 80px + top and bottom padding of 20px i.e(2*20) + top and bottom border of 8px i.e (2*8)
+	80 + 40 + 16 = 136*/
+}
+
+.border-box{
+	/*add the padding and border box inside the box*/
+	box-sizing: border-box;
+	/*total width = 160px
+	total height = 80px*/ 
+	/*total content width = 160 - (2*20)-(2*8) total width - left and right padding and border
+		160 - 40 - 16 = 104
+	total content height = 80 - (2*20)-(2*8) total height - left and right padding and border
+		80 - 40 - 16 = 24*/
+}
+
+.initial-box{
+	box-sizing: initial;
+}
+
+.inherit-box{
+	box-sizing: inherit;
+}
+
+.revert-box{
+	box-sizing: revert;
+}
+
+.unset-box{
+	box-sizing: unset;
+}

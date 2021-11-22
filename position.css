@@ -1,0 +1,16 @@
+*{
+	box-sizing: border-box;
+}
+
+.box{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: blue;
+	color: white;
+}
+
+#two{
+	background: red;
+	position: absolute;
+}
